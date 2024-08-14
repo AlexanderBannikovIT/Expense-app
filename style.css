@@ -1,0 +1,140 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+.Main-Title{
+    text-align: center;
+    color: white;
+}
+
+.Expenses-Wrapper{
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AddButton{
+    padding: 10px 100px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1em;
+    max-width: 300px;
+}
+
+.AddButton:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.Remove-Button{
+    padding: 10px 100px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1em;
+    max-width: 300px;
+}
+
+.Remove-Button:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+
+.Input_Border{
+    width: 300px;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+.currency{
+    color: white;
+}
+
+.currency::after{
+    content: " руб";
+}
+
+.label{
+    font-weight: 700;
+    color: white;
+}
+
+.status{
+    color: white;
+}
+
+.good_total{
+    color: green;
+}
+
+.bad_total{
+    color: red;
+}
+
+.category_css{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    color: white;
+
+}
+
+
+.Select-Border{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+option{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+.category_css:active{
+    outline: none;
+    border: none;
+}
+
+#LimitChangeButton{
+    cursor: pointer;
+    padding: 10px;
+}

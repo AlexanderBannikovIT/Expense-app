@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+
+    <div class="Expenses-Wrapper">
+        <h1 class="Main-Title">Учет расходов</h1>
+        <div class="Inputs-Block">
+            <div class="Expenses Input_Border">
+                <input type="number" min="1" id="Expenses-Input_JS" class="Expenses-Input__Input currency">
+            </div>
+            <div class="Select-Border">
+                <select class="category_css" name="category" id="CategoryList">
+                    <option value="Категория" disabled hidden selected>Категория</option>
+                    <option value="Еда">Еда</option>
+                    <option value="Развлечения">Развлечения</option>
+                    <option value="Авто">Авто</option>
+                    <option value="Недвижимость">Недвижимость</option>
+                </select>
+            </div>
+        </div>
+        <div class="Button-Block">
+            <button class="AddButton" id="AddButton_JS" >Добавить</button>
+        </div>
+        <div class="Stats-Block">
+            <div class="Limit-Stat">
+                <span class="label">Лимит:</span>
+                <span class="Limit currency" id="LimitValue">10000</span>
+                <img src="./img/pen-square-svgrepo-com (1).svg" id="LimitChangeButton" alt="" height="20" width="20">
+            </div>
+            <div class="Total-Stat">
+                <span class="label">Всего:</span>
+                <span class="Total currency" id="TotalValue"></span>
+            </div>
+            <div class="Status-Stat">
+                <span class="label">Статус:</span>
+                <span class="status" id="StatusText"></span>
+            </div>
+        </div>
+        <div class="History-Block">
+            <ol class="History-List" id="HistoryList">
+            </ol>
+        </div>
+        <button class="Remove-Button" id="RemoveButton">
+            Сбросить расходы
+        </button>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
